@@ -67,9 +67,9 @@ void main() {
   //var number;
   //print(number ??= 100);
 
-  int grade = 73;
+  //int grade = 73;
   //String remarks = "";
-  String remarks = (grade >= 75) ? "PASSED" : "FAILED";
+  //String remarks = (grade >= 75) ? "PASSED" : "FAILED";
   //print(remarks);
 
   //  if (grade is int) {
@@ -81,16 +81,17 @@ void main() {
   //  }
   //}
 
-  switch (remarks) {
-    case "PASSED":
-      print("HELL YEAHH");
-      break;
-    case "FAILED":
-      print("NOT HELL YEAHH");
-      break;
-  }
-}
+  //  switch (remarks) {
+  //    case "PASSED":
+  //      print("HELL YEAHH");
+  //      break;
+  //    case "FAILED":
+  //      print("NOT HELL YEAHH");
+  //      break;
+  //  }
+  //}
 
-//class Num {
-//  int num = 10;
-//}
+  //class Num {
+  //  int num = 10;
+  //}
+}
