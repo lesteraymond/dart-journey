@@ -15,8 +15,7 @@ void main() {
   //String e = "HANNI";
   //var f = e;
 
-  //dynamic x = 2;
-  dynamic y = 2;
+  //dynamic x = 2;  //dynamic y = 2;
 
   //String str1 = "It's easy to escape string delimiter";
   //String str2 = 'It\'s easy to escape string delimiter';
@@ -65,8 +64,20 @@ void main() {
   //number = n?.num ?? 0;
   //print(number.runtimeType);
 
-  var number;
-  print(number ??= 100);
+  //var number;
+  //print(number ??= 100);
+
+  dynamic grade = 95;
+  dynamic remarks = (grade >= 75) ? "PASSED" : "FAILED";
+  //print(remarks);
+
+  if (grade is int) {
+    print("Integer");
+  }
+
+  if (remarks is String) {
+    print("String");
+  }
 }
 
 //class Num {
