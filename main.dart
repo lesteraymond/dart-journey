@@ -67,16 +67,27 @@ void main() {
   //var number;
   //print(number ??= 100);
 
-  dynamic grade = 95;
-  dynamic remarks = (grade >= 75) ? "PASSED" : "FAILED";
+  int grade = 73;
+  //String remarks = "";
+  String remarks = (grade >= 75) ? "PASSED" : "FAILED";
   //print(remarks);
 
-  if (grade is int) {
-    print("Integer");
-  }
+  //  if (grade is int) {
+  //    print("Integer");
+  //  }
 
-  if (remarks is String) {
-    print("String");
+  //  if (remarks is String) {
+  //    print("String");
+  //  }
+  //}
+
+  switch (remarks) {
+    case "PASSED":
+      print("HELL YEAHH");
+      break;
+    case "FAILED":
+      print("NOT HELL YEAHH");
+      break;
   }
 }
 
