@@ -1,6 +1,6 @@
 void main() {
-  //https://www.youtube.com/watch?v=Ej_Pcr4uC2Q&t=401s
-  //34:50
+  //https://www.youtube.com/watch?v=Ej_Pcr4uC2Q
+  //56:00
   //stdout.write("Enter your name: ");
   //String? name = stdin.readLineSync();
 
@@ -94,4 +94,25 @@ void main() {
   //class Num {
   //  int num = 10;
   //}
+
+  //for (int i = 0; i <= 10; i++) {
+  //  print(i);
+  //}
+
+  //var numbers = [1, 2, 3, 4, 5];
+  //numbers.forEach((n) {
+  //  print(n);
+  //});
+  //for (int i = 0; i < numbers.length; i++) {
+  //  print(numbers[i]);
+  //}
+  //for (var number in numbers) {
+  //  print(number);
+  //}
+
+  List<String> names = ["Hanni", "Minji", "Haerin", "Danielle", "Hyein"];
+  List<String> names2 = [...names];
+  for (String name in names2) {
+    print(name);
+  }
 }
