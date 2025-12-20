@@ -1,6 +1,6 @@
 void main() {
   //https://www.youtube.com/watch?v=Ej_Pcr4uC2Q
-  //56:00
+  //1:12:10
   //stdout.write("Enter your name: ");
   //String? name = stdin.readLineSync();
 
@@ -110,9 +110,57 @@ void main() {
   //  print(number);
   //}
 
-  List<String> names = ["Hanni", "Minji", "Haerin", "Danielle", "Hyein"];
-  List<String> names2 = [...names];
-  for (String name in names2) {
-    print(name);
-  }
+  //List<String> names = ["Hanni", "Minji", "Haerin", "Danielle", "Hyein"];
+  //List<String> names2 = [...names];
+  //for (String name in names2) {
+  //  print(name);
+  //}
+
+  //Set<String> names = {
+  //  "Hanni",
+  //  "Hanni",
+  //  "Minji",
+  //  "Haerin",
+  //  "Danielle",
+  //  "Hyein",
+  //};
+  //for (String name in names) {
+  //  print(name);
+  //}
+
+  //Set<int> ID = {};
+  //print(ID.runtimeType)
+
+  //Map<String, dynamic> entries = {"id": 1, "name": "hanni", "age": 21};
+  //print(entries["name"]);
+
+  //Map<String, dynamic> gifts = Map();
+  //gifts["id"] = 1;
+  //gifts["name"] = "hanni";
+  //gifts["age"] = 21;
+  //print(gifts);
+
+  //showOutput(square(2));
+  //showOutput(square(2.5));
+
+  //List<String> names = ["Hanni", "Minji", "Haerin", "Danielle", "Hyein"];
+  //names.forEach((var name) {
+  //  print(name.toUpperCase());
+  //});
+
+  var result = sum(x: 5, y: 5);
+  print(result);
 }
+
+dynamic sum({var x, var y}) {
+  return x + y;
+}
+//void printName(var name) {
+//  print(name);
+//}
+
+//dynamic square(var num) => {num * num};
+
+//void showOutput(var msg) {
+//  print(msg);
+//}
