@@ -148,13 +148,16 @@ void main() {
   //  print(name.toUpperCase());
   //});
 
-  var result = sum(x: 5, y: 5);
-  print(result);
+  //var result = sum(x: 5, y: 5);
+  //print(result);
+
+  //print(sum(5, 5));
+  //print(sum(5));
 }
 
-dynamic sum({var x, var y}) {
-  return x + y;
-}
+//dynamic sum(var x, [var y = 0]) => x + y;
+
+//
 //void printName(var name) {
 //  print(name);
 //}
