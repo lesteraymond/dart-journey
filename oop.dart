@@ -1,5 +1,3 @@
-import 'Car.dart';
-
 //class Person {
 //String? name;
 //int? age;
@@ -24,9 +22,21 @@ import 'Car.dart';
 //  final String? name = "Hanni";
 //}
 
+import 'Animal.dart';
+import 'Dog.dart';
+
 void main() {
-  Car car = new Car("Toyota", 2021, 1000000);
-  car.showData();
+  Animal animal = new Dog("Blacky", 2);
+  animal.printData();
+
+  Dog dog = new Dog("Blacky", 1, "Askal");
+  dog.printData();
+
+  dog.age = 2;
+  dog.printData();
+
+  //Car car = new Car("Toyota", 2021, 1000000);
+  //car.showData();
   //car.vehModel = "Honda";
   //car.showData();
   //Person person = new Person('Hanni', 21);

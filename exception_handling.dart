@@ -14,6 +14,9 @@ main(List<String> args) {
   }
 }
 
+/**
+this method will check if the number is greater than zero
+**/
 int mustGreaterThanZero(int x) {
   if (x <= 0) {
     throw new Exception('Value must be greater than zero');
