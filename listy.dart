@@ -17,5 +17,8 @@ main(List<String> args) {
     11,
   ]);
   //numbers.removeLast();
-  print(numbers);
+  //print(numbers);
+  for (final int n in numbers) {
+    print(n);
+  }
 }
