@@ -22,15 +22,19 @@
 //  final String? name = "Hanni";
 //}
 
+import 'dart:io';
+
 import 'Animal.dart';
 import 'Dog.dart';
 
 void main() {
   Animal animal = new Dog("Blacky", 2);
   animal.printData();
+  stdout.writeln();
 
   Dog dog = new Dog("Blacky", 1, "Askal");
   dog.printData();
+  stdout.writeln();
 
   dog.age = 2;
   dog.printData();
