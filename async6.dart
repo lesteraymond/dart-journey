@@ -9,6 +9,9 @@ void main(List<String> args) async {
   print("The sum all numbers is $sum");
 }
 
+/** 
+ This method will add two numbers
+ **/
 int add(int a, int b) => a + b;
 Stream<int> getAllAges() async* {
   yield 10;
