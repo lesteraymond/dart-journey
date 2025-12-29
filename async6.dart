@@ -4,7 +4,7 @@ void main(List<String> args) async {
   //   sum += age;
   // }
 
-  final int sum = await getAllAges().reduce(add);
+  final int sum = await getAllAges().reduce((int a, int b) => (a + b));
 
   print("The sum all numbers is $sum");
 }
@@ -13,6 +13,7 @@ void main(List<String> args) async {
  This method will add two numbers
  **/
 int add(int a, int b) => a + b;
+
 Stream<int> getAllAges() async* {
   yield 10;
   yield 20;
