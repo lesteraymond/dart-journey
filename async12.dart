@@ -12,11 +12,11 @@ void main(List<String> args) async {
   }
 }
 
-extension AbsorbErrors<T> on Stream<T> {
+extension<T> on Stream<T> {
   Stream<T> absorbErrorsUsingHandleError() => handleError((_, __) {});
 
   Stream<T> absorbErrorsUsingHandles() => transform(
-    StreamTransformer.fromHandlers(handleError: (_, __, sink) => sink.close()),
+    StreamTransformer.fromHandlers(handleError: (_, _, sink) => sink.close()),
   );
 
   Stream<T> absorbErrorsUsingTransformer() => transform(StreamErrorAbsorber());
@@ -35,7 +35,7 @@ class StreamErrorAbsorber<T> extends StreamTransformerBase<T, T> {
 
     stream.listen(
       controller.sink.add,
-      onError: (__) {},
+      onError: (_) {},
       onDone: controller.close,
     );
     return controller.stream;
