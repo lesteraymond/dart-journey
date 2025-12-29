@@ -6,7 +6,7 @@ void main(List<String> args) async {
   }
 }
 
-Stream<String> names = Stream.fromIterable(["John", "Doe"]);
+Stream<String> names = Stream.fromIterable({"John", "Doe"});
 
 extension on Stream<String> {
   Stream<String> get capitalized => transform(ToUpperCase());
